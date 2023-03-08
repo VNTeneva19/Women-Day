@@ -31,37 +31,42 @@ public class Joke {
                 break;
             case 5:
                 System.out.println("Five Reasons You Should Help Your Wife Clean The House: ");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
                 System.out.println("1. You fucking live there too. ");
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
                 System.out.println("2. You fucking live there too. ");
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
                 System.out.println("3. You fucking live there too. ");
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
                 System.out.println("4. You fucking live there too. ");
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
                 System.out.println("5. You fucking live there too. ");
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-                Thread.sleep(15000);
+                Thread.sleep(3000);
                 clearScreen();
                 main.jokesMenu();
                 break;
