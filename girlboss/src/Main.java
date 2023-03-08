@@ -1,13 +1,10 @@
 import java.util.*;
 
 public class Main {
-    public static void log(String msg){
-        var tid = Thread.currentThread().getId();
-        System.out.printf("%d: %s\n", tid, msg);
-    }
     public static void jokesMenu() {
         Scanner scanner = new Scanner(System.in);
-        int answer = Integer.parseInt(scanner.nextLine());
+        Joke joke = new Joke();
+
 
         System.out.println("____                                                  _     _                        _ _     ___ ");
         System.out.println("|  _ \\  ___    _   _  ___  _   _  __      ____ _ _ __ | |_  | |_ ___    ___ _ __ ___ (_) | __|__ \\");
@@ -19,15 +16,20 @@ public class Main {
         System.out.println("1. Feminist jokes");
         System.out.println("2. Programmer jokes");
         System.out.println("3. Smile :)");
+        int answer = Integer.parseInt(scanner.nextLine());
+
         if(answer == 1) {
-
-        } else if (answer == 2) {
-
-        } else if (answer == 3) {
-
-        } else {
-            System.out.println("Invalid answer");
+            System.out.println("Choose a number from 1 - 7");
+            int feministAnswer = Integer.parseInt(scanner.nextLine());
+            joke.feministJokes(feministAnswer);
         }
+//        else if (answer == 2) {
+//
+//        } else if (answer == 3) {
+//
+//        } else {
+//            System.out.println("Invalid answer");
+//        }
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
